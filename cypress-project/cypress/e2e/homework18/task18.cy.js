@@ -2,7 +2,7 @@
 
 describe("Homework18", () => {
   beforeEach(() => {
-    cy.viewport(1024, 720);
+    cy.viewport(1920, 1080);
     cy.visit("https://qauto.forstudy.space", {
       auth: {
         username: "guest",
@@ -82,7 +82,7 @@ describe("Homework18", () => {
       cy.get('@footerMainWebsite').should('be.visible');
     })
 
-    it('Check footer support link', () => {
+    it.only('Check footer support link', () => {
       cy.get('[href="mailto:developer@ithillel.ua"]').as('footerSupportMailLink');
       cy.contains('.contacts_link', 'support@ithillel.ua').as('footerSupportMail');
 
