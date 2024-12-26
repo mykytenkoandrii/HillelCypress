@@ -5,10 +5,10 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
-    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space/',
+      baseUrl: "https://guest:welcome2qauto@qauto2.forstudy.space/",
 
       retries: {
-        runMode: 2
+        runMode: 2,
       },
       reporter: 'cypress-mochawesome-reporter',
       defaultCommandTimeout: 10000,
@@ -18,9 +18,9 @@ module.exports = defineConfig({
       screenshotOnRunFailure: true,
       video: true,
       videosFolder: "cypress/videos",
-      env:{
-        USER_EMAIL: "testdata+hillel@gmail.com",
-        USER_PASS: "!sSq&m1L2Xader"
-      }
-    },
+    env:{
+      USER_EMAIL: 'testdata+hillel2@gmail.com',
+      USER_PASS: '!sSq&m1L2Xader'
+    }
+  },
   });
