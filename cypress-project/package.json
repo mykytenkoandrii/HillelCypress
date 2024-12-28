@@ -1,0 +1,16 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:main_env": "npx cypress run --config-file cypress.config.cjs",
+    "test:second_env": "npx cypress run --config-file cypress.config2.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
